@@ -127,7 +127,7 @@ export default function Navbar() {
 
 	const NavMarkup = (props) => (
 		navLink.map((nav, i) => (
-			<ScrollLink onClick={props.click} className='nav-link' to={nav.link} spy={true} smooth={true}>
+			<ScrollLink key={i} onClick={props.click} className='nav-link' to={nav.link} spy={true} smooth={true}>
 				<img src={img[nav.id]} style={{minWidth: width > 1200 ? nav.width : nav.minWidth}} onMouseEnter={() => toggleImg(nav.color, nav.id)} onMouseLeave={() => toggleImg(nav.img, nav.id)}  alt={nav.link}  />
 			</ScrollLink>
 		))

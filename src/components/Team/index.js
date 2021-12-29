@@ -136,8 +136,8 @@ const Member = (props) => {
 				<Body>
 					<div style={{padding: '1rem'}}>
 						<p className="font-space" style={{margin:0, fontSize:24}}>{props.name}</p>
-						<p style={{marginTop:0, fontSize:18, color:'#FAB2EA'}}>{props.title}</p>
-						<p style={{marginTop:0, fontSize:18}}>{props.text}</p>
+						<p style={{marginTop:0, fontSize:16, color:'#FAB2EA'}}>{props.title}</p>
+						<p style={{marginTop:0, fontSize:14, marginBottom: 0}}>{props.text}</p>
 					</div>
 				</Body>
 			</div>

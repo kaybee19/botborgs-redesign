@@ -45,7 +45,7 @@ export default function Goals(props) {
 			<Ul>
 				{
 					quarter.map((q, i) => (
-						<li>
+						<li key={i}>
 							<span style={{color:color}}>{q.month}</span> - <span>{q.text}</span>
 						</li>
 					))

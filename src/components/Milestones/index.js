@@ -68,7 +68,7 @@ export default function Borgverse() {
 				<div className="goalsContainer">
 					{
 						goals.map((g, i) => (
-							<Goals data={g} />
+							<Goals key={i} data={g} />
 						))
 					}
 				</div>

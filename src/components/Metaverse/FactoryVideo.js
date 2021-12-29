@@ -22,14 +22,13 @@ const Root = styled('div')`
 	}
 `;
 
-export default class FactoryVideo extends React.Component {
-	render() {
-		return (
-			<Root>
-				<video autoPlay muted loop>
-				  <source src={factory} type="video/mp4" />
-				</video>
-			</Root>
-		)
-	}
+export default function FactoryVideo() {
+
+	return (
+		<Root>
+			<video autoPlay muted loop>
+			  <source src={factory} type="video/mp4" />
+			</video>
+		</Root>
+	)
 }

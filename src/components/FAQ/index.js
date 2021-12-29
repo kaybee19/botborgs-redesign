@@ -44,13 +44,13 @@ const Body = styled('div')`
 export default function FAQ(props) {
 
 	const data = [
+		{ q: 'Where will I be able to mint a Borborg?', a: 'We are collaborating with Magic Eden and minting through the launchpad on their website to ensure a bot-free and secure minting experience for our community.' },
 		{ q: 'Which wallets are supported for minting and will I be able to mint on mobile?', a: 'We will support Phantom, Solflare, and Sollet wallets. If you want to mint on mobile we recommend Sollet as it is the only wallet on this list that allows minting through mobile.' },
-		{ q: 'Where can I read more about the tokenomics within the Borgverse and the applications of $BOLT coin?', a: 'We will be releasing a whitepaper shortly that will go in depth on the $BOLT coin and its utility both within and outside of the Borgverse.' },
+		{ q: 'Where can I read more about the play to earn mechanics and tokenomics of the borgverse and its coin?', a: 'We are currently working on a proper in game economy as well as tokenomics for our token in the Borgverse. We are not rushing this process as tokenomics are a crucial part of the Borgverse.' },
 		{ q: 'When do Botborgs release, what is the mint price, and what is the wallet Limit?', a: 'There will be a total of 10,000 Botborgs in the Borgverse. The official release day has not been announced yet. The official mint price has not been finalized. There will be no wallet limit, however it will be 1 per transaction with unlimited transaction.' },
-		{ q: 'Where and when will I be able to check the rarity of my Botborg?', a: 'We will be creating a rarity checker ourselves which will be displayed on the official Botborgs website.' },
+		{ q: 'Will i be able able to see the traits of my botborg in game?', a: 'Yes, we are working on an in game system that will automatically apply the traits of your Botborgs NFT to the 3D full body characters when you connect your wallet.' },
 		{ q: 'How can I prevent myself from falling for common scams in the NFT ecosystem?', a: 'To protect yourself from scams we STRONGLY recommend using burner wallets for mints. We also strongly recommend turning off auto-approve for all websites your wallet is connected to, even if they are trusted. Also, this should be a no brainer but NEVER click any links sent to you through DMs or posted in the chat by non-moderators/admins of the discord.' },
 		{ q: 'What are the secondary sale royalties?', a: 'Royalties are set at 5%. A percent of these royalties will be deposited into the Borgverse community fund. ALL Botborg ecosystem collections will be contributing directly to this pool of funds which will be used to provide added benefits and rewards to holders.' },
-		{ q: 'Where will I be able to mint a Borborg?', a: 'We are collaborating with Magic Eden and minting through the launchpad on their website to ensure a bot-free and secure minting experience for our community.' },
 	]
 
 	return (

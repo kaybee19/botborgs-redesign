@@ -1,24 +1,92 @@
-import game from '../../assets/images/team/game.png';
-import developers from '../../assets/images/team/developers.png';
-import artists from '../../assets/images/team/artists.png';
-import courtney from '../../assets/images/team/courtney.png';
-import andrew from '../../assets/images/team/andrew.png';
-import dannyg from '../../assets/images/team/dannyg.png';
 import dagen from '../../assets/images/team/dagen.png';
+import shade from '../../assets/images/team/shade.png';
+import chris from '../../assets/images/team/chris.png';
+import andrew from '../../assets/images/team/andrew.png';
+import jenni from '../../assets/images/team/jenni.png';
+import ryan from '../../assets/images/team/ryan.png';
+import mark from '../../assets/images/team/mark.png';
+import CGRay from '../../assets/images/team/CGRay.png';
+import xiang from '../../assets/images/team/xiang.png';
+import kabir from '../../assets/images/team/kabir.png';
+import tahir from '../../assets/images/team/tahir.png';
 
 
 export const data = [
-	{ id: 'dagen', name: 'DAGEN', text: 'The Ruler of the Universe. Operations Management and Marketing wizard.', title: 'Founder', body: 'The Ruler of the Universe. Operations Management and Marketing wizard.', img: dagen },
-
-	{ id: 'dannyg', name: 'DANNYG', text: '69x cooler than Dagen. Artist Management and Direction.', title: 'Co-founder', body: '69x cooler than Dagen. Artist Management and Direction.', img: dannyg },
-	
-	{ id: 'andrew', name: 'ANDREW', text: 'Handles the layout of the universe. Blame him if your planet is far away.', title: 'Degenerate shitcoiner', body: 'Handles the layout of the universe. Blame him if your planet is far away.', img: andrew },
-	
-	{ id: 'courtney', name: 'COURTNEY', text: 'Eats sushi all day and focuses on finding new talent.', title: 'The Queen', body: 'Eats sushi all day and focuses on finding new talent.', img: courtney },
-	
-	{ id: 'artists', name: 'ARTISTS', text: '7 elite individuals working with us to create some cool ass shit. ', title: 'The GOATs', body: 'Our art team consists of 7 extremely talented artists that all specialize in different sectors of art for our project. From the bots, to the bunkers, to the planets, to the robotic arms, and much more. Our artists focus on perfection and delivering an amazing product to you all.', img: artists },
-	
-	{ id: 'developers', name: 'DEVELOPERS', text: '3 backend developers, 12 brains, seriously these guys have giga brains.', title: 'Backend Developers', body: 'Our dev team currently consists of 3 developers with experience in both the eth and sol space. Our devs delegate their time to the integration of web 3 for the Borgverse. We are constantly looking to add more developers to our team and have been in talks with several reputable devs from the space. We understand that for a project like ours to thrive, there must be extremely capable developers and visionaries behind it.', img: developers },
-
-	{ id: 'game', name: 'GAME DEVELOPERS', text: 'The brains behind the games. Established studio building the Borgverse.', title: 'The Brains', body: 'For the gaming side of our project we are working with a gaming studio that has been operating since 2008 with many games under their belt. This studio has released many games on web based platforms as well as Steam. After consulting with several studios we chose to go with this team because they have a ton of experience when it comes to WebGL open world type games which is precisely what we are doing here at Botborgs. This studio has also worked on several games with a futuristic space theme which is similar to what we are doing here at Botbrogs. The overall experience and past work of this studio spoke for itself which is why we chose it over several other teams that we interviewed.', img: game },
+	{
+		id: 'Dagen',
+		name: 'Dagen' ,
+		title: 'Lead Project Director',
+		text: 'Head of Operations and Partnerships. 7 years of game marketing experience.',
+		img: dagen,
+	},
+	{
+		id: 'Shade',
+		name: 'Shade',
+		title: 'Executive Producer',
+		text: 'Leader of our game development team. 13 years of game development experience. ',
+		img: shade,
+	},
+	{
+		id: 'Chris',
+		name: 'Chris',
+		title: 'Game Mechanics',
+		text: 'Works on all the NPCs and in-game player interactions. 7 years of experience.',
+		img: chris,
+	},
+	{
+		id: 'Andrew',
+		name: 'Andrew',
+		title: 'Lead Blockchain Developer. ',
+		text: 'Works on in-game implementation and mechanics. 3 years of experience.',
+		img: andrew,
+	},
+	{
+		id: 'Jenni',
+		name: 'Jenni',
+		title: 'Lead Environment Artist',
+		text: 'Directs our team of artists on planet environments and PVP game map creation. 8 years of experience. ',
+		img: jenni,
+	},
+	{
+		id: 'Ryan',
+		name: 'Ryan',
+		title: 'UI Designer',
+		text: 'Helps create visually appealing and interactive menus for multiplayer/PVP planets. 6 years of experience.',
+		img: ryan,
+	},
+	{
+		id: 'Mark',
+		name: 'Mark',
+		title: 'Level Design/Environment Artist',
+		text: 'Designs levels and environments on our single player planets. 3 years of experience.',
+		img: mark,
+	},
+	{
+		id: 'CGRay',
+		name: 'CGRay',
+		title: 'Character Creation Leader + VFX Designer',
+		text: 'Designs/rigs/animates characters in the Borgverse. Head of BingoArtStudio which is a team of 5 professional 3D artists that have done work for Blizzard, EA, and more. Founded in 2013.',
+		img: CGRay,
+	},
+	{
+		id: 'Xiang',
+		name: 'Xiang',
+		title: 'Character/Asset Artist',
+		text: 'Part of the BingoArtStudio team. Leads in game vehicle design (spaceships, cars, tanks, etc) 8 years of experience. ',
+		img: xiang,
+	},
+	{
+		id: 'Kabir',
+		name: 'Kabir',
+		title: 'Front End Developer',
+		text: 'Works on all facets of our front end interface including both of our websites. 5 years of experience.',
+		img: kabir,
+	},
+	{
+		id: 'Tahir',
+		name: 'Tahir',
+		title: 'Concept Artist',
+		text: 'Creates concept art for our 3D artists to base their models off of. 7 years of experience. ',
+		img: tahir,
+	},
 ];

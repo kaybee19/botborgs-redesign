@@ -53,13 +53,13 @@ export default function FactoryVid() {
 				<FactoryVideo />
 			</div>
 			<div className="links">
-				<a target="_blank" class="linkClass" href="https://discord.com/invite/7vtqB5yshV">
+				<a rel="noreferrer" target="_blank" className="linkClass" href="https://discord.com/invite/7vtqB5yshV">
 				<div>
 					<img src={discord} width="18" alt="twitter-logo" />
 					<p className="font-coven" style={{margin:0}}>Join the community</p>
 				</div>
 				</a>
-				<a target="_blank" class="linkClass" href="https://twitter.com/Botborgs">
+				<a rel="noreferrer" target="_blank" className="linkClass" href="https://twitter.com/Botborgs">
 				<div>
 					<img src={twitter} width="18" alt="twitter-logo" />
 					<p className="font-coven" >Follow Us</p>
