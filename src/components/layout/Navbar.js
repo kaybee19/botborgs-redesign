@@ -117,11 +117,13 @@ export default function Navbar() {
 
 	const toggleImg = (x, y) => {
 		let newImg;
-		newImg = {
-			...img,
-			[y]: x
+		if (width < 900) {
+			newImg = {
+				...img,
+				[y]: x
+			}
+			setImg(newImg);
 		}
-		setImg(newImg);
 	};
 
 	const NavMarkup = (props) => (
