@@ -693,6 +693,9 @@ const GlobalStyle = createGlobalStyle`
 				border-top: 10px solid white;
 				bottom: -40px;
 	    }
+	    @media (max-width: 600px) {
+	    	bottom: -120px;
+	    }
 		}
 		span {
 			color: #36FCFF;
