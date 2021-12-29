@@ -109,7 +109,7 @@ export default function Navbar() {
 
 	const navLink	= [
 		{ id: 1,  img: nav1, color: nav1Color, link: 'botborgs', width: 187, minWidth: 140 },
-		{ id: 2,  img: nav2, color: nav2Color, link: 'borgverse', width: 203, minWidth: 152.5 },
+		{ id: 2,  img: nav2, color: nav2Color, pageLink: 'borgverse', width: 203, minWidth: 152.5 },
 		{ id: 3,  img: nav3, color: nav3Color, link: 'offering', width: 87, minWidth: 65.5 },
 		{ id: 4,  img: nav4, color: nav4Color, link: 'faq', width: 63, minWidth: 48 },
 		{ id: 5,  img: nav5, color: nav5Color, link: 'team', width: 95, minWidth: 72 },
@@ -121,16 +121,25 @@ export default function Navbar() {
 			...img,
 			[y]: x
 		}
-		console.log(newImg)
 		setImg(newImg);
 	};
 
 	const NavMarkup = (props) => (
-		navLink.map((nav, i) => (
-			<ScrollLink key={i} onClick={props.click} className='nav-link' to={nav.link} spy={true} smooth={true}>
-				<img src={img[nav.id]} style={{minWidth: width > 1200 ? nav.width : nav.minWidth}} onMouseEnter={() => toggleImg(nav.color, nav.id)} onMouseLeave={() => toggleImg(nav.img, nav.id)}  alt={nav.link}  />
-			</ScrollLink>
-		))
+		navLink.map((nav, i) => {
+			if (nav.pageLink) {
+				return (
+					<Link key={i} className='nav-link' to={`${nav.pageLink}`}>
+						<img src={img[nav.id]} style={{minWidth: width > 1200 ? nav.width : nav.minWidth}} onMouseEnter={() => toggleImg(nav.color, nav.id)} onMouseLeave={() => toggleImg(nav.img, nav.id)}  alt={nav.link}  />
+					</Link>
+				)
+			} else {
+				return (
+					<ScrollLink key={i} onClick={props.click} className='nav-link' to={nav.link} spy={true} smooth={true}>
+						<img src={img[nav.id]} style={{minWidth: width > 1200 ? nav.width : nav.minWidth}} onMouseEnter={() => toggleImg(nav.color, nav.id)} onMouseLeave={() => toggleImg(nav.img, nav.id)}  alt={nav.link}  />
+					</ScrollLink>
+				)
+			}
+		})
 	);
 
 	const iconMarkup = (

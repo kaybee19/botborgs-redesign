@@ -34,8 +34,8 @@ export const data = [
 		img: chris,
 	},
 	{
-		id: 'Andrew',
-		name: 'Andrew',
+		id: 'Andy',
+		name: 'Andy',
 		title: 'Lead Blockchain Developer. ',
 		text: 'Works on in-game implementation and mechanics. 3 years of experience.',
 		img: andrew,
