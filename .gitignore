@@ -3,6 +3,8 @@
 # dependencies
 /node_modules
 /.pnp
+/src/assets/BotBorgs_.zip
+/src/assets/images/botVideo_.mp4
 .pnp.js
 
 # testing
@@ -10,6 +12,7 @@
 
 # production
 /build
+/build.zip
 
 # misc
 .DS_Store

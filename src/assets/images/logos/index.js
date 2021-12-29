@@ -1,0 +1,15 @@
+export { default as igg } from './igg.png';
+export { default as blizzard } from './blizzard.png';
+export { default as netease } from './netease.png';
+export { default as easports } from './easports.png';
+export { default as tencentgame } from './tencentgame.png';
+export { default as battle } from './battle.png';
+export { default as crash } from './crash.png';
+export { default as diablo } from './diablo.png';
+export { default as twitter } from './twitter.png';
+export { default as discord } from './discord.png';
+export { default as medium } from './medium.png';
+export { default as twitterDark } from './twitterDark.png';
+export { default as discordDark } from './discordDark.png';
+export { default as mediumDark } from './mediumDark.png';
+export { default as copy } from './copy.png';
