@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import { bg1, download, heroWhite } from '../../assets/images';
+import { bg1, download, downloadColor, heroWhite } from '../../assets/images';
 import BotBorgs from '../../assets/BotBorgs.zip'
 import Gif from './Gif';
 import Learn from './Learn';
@@ -39,6 +39,8 @@ const Background = styled('div')`
 
 export default function Borgverse() {
 
+	const [img, setImg] = React.useState(download);
+
 	return (
 		<Root>
 			<div id="borgverse">
@@ -52,7 +54,7 @@ export default function Borgverse() {
 						<span className="arrow-down"></span>
 					</div>
 					<a href={BotBorgs} download>
-						<img src={download} className="download" alt="download" />
+						<img src={img} onMouseEnter={() => setImg(downloadColor)}  onMouseLeave={() => setImg(download)} className="download" alt="download" />
 					</a>
 				</div>
 			</div>

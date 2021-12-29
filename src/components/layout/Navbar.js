@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import styled from 'styled-components';
 import { Link as ScrollLink } from 'react-scroll'
-import { nav, nav1, nav2, nav3, nav4, nav5 } from '../../assets/images';
+import { nav, nav1, nav2, nav3, nav4, nav5, nav1Color, nav2Color, nav3Color, nav4Color, nav5Color } from '../../assets/images';
 import { medium, twitter, discord } from '../../assets/images/logos';
 
 // Material UI
@@ -77,6 +77,7 @@ export default function Navbar() {
 	// Page Width
 	const [width, setwidth] = React.useState(window.innerWidth);
   const [nav, setNav] = React.useState(false);
+  const [mouse, setMouse] = React.useState(false);
 
 	React.useEffect(() => {
 		window.addEventListener('resize', (x) => setwidth(x.target.innerWidth));
@@ -98,18 +99,36 @@ export default function Navbar() {
 	  nav && toggleDrawer();
   }
 
+  const [img, setImg] = React.useState({
+		1: nav1,
+		2: nav2,
+		3: nav3,
+		4: nav4,
+		5: nav5,
+	});
+
 	const navLink	= [
-		{ img: nav1, link: 'botborgs' },
-		{ img: nav2, link: 'borgverse' },
-		{ img: nav3, link: 'offering' },
-		{ img: nav4, link: 'faq' },
-		{ img: nav5, link: 'team' },
+		{ id: 1,  img: nav1, color: nav1Color, link: 'botborgs', width: 187, minWidth: 140 },
+		{ id: 2,  img: nav2, color: nav2Color, link: 'borgverse', width: 203, minWidth: 152.5 },
+		{ id: 3,  img: nav3, color: nav3Color, link: 'offering', width: 87, minWidth: 65.5 },
+		{ id: 4,  img: nav4, color: nav4Color, link: 'faq', width: 63, minWidth: 48 },
+		{ id: 5,  img: nav5, color: nav5Color, link: 'team', width: 95, minWidth: 72 },
 	];
+
+	const toggleImg = (x, y) => {
+		let newImg;
+		newImg = {
+			...img,
+			[y]: x
+		}
+		console.log(newImg)
+		setImg(newImg);
+	};
 
 	const NavMarkup = (props) => (
 		navLink.map((nav, i) => (
 			<ScrollLink onClick={props.click} className='nav-link' to={nav.link} spy={true} smooth={true}>
-				<img src={nav.img} alt={nav.link} />
+				<img src={img[nav.id]} style={{minWidth: width > 1200 ? nav.width : nav.minWidth}} onMouseEnter={() => toggleImg(nav.color, nav.id)} onMouseLeave={() => toggleImg(nav.img, nav.id)}  alt={nav.link}  />
 			</ScrollLink>
 		))
 	);

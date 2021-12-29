@@ -293,6 +293,10 @@ const GlobalStyle = createGlobalStyle`
 						right: -50px;
 						transform: rotate(180deg);
 					}
+					&:hover {
+						color: #36FCF5;
+						transition. .5s;
+					}
 				}
 				div {
 					position: absolute;
@@ -651,6 +655,7 @@ const GlobalStyle = createGlobalStyle`
 					border: 2px solid #36FCFF;
 					padding: 0 1rem;
 					&.goals {
+						border: 2px solid #EA00EA;
 						span {
 							color: #EA00EA;
 						}
