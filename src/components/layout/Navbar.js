@@ -117,7 +117,7 @@ export default function Navbar() {
 
 	const toggleImg = (x, y) => {
 		let newImg;
-		if (width < 900) {
+		if (width > 900) {
 			newImg = {
 				...img,
 				[y]: x
