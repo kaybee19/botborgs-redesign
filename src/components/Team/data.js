@@ -16,7 +16,7 @@ export const data = [
 		id: 'Dagen',
 		name: 'Dagen' ,
 		title: 'Lead Project Director',
-		text: 'Head of Operations and Partnerships. 7 years of game marketing experience.',
+		text: 'Head of Operations and Partnerships. 7 years of marketing experience.',
 		img: dagen,
 	},
 	{
