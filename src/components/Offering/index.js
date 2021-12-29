@@ -89,7 +89,7 @@ export default function Offering() {
 				{ text:'Completely customize the inside of your bunker using our 3D asset library. with an easy to use customization tool.' },
 				{ text:'Display NFT’s inside of your bunker for others to view.' },
 				{ text:'Invite other players to your bunker for private meetings/events.' },
-				{ text:'More benefits coming soon . . .' },
+				{ text:'Only obtainable by being a Botborg. More benefits coming soon...' },
 			]
 		},
 	];
